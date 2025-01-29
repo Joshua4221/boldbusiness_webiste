@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import TextCenteredBanner from "./component/common/bottom_banners/TextCenteredBanner";
+import Footer from "./component/common/footer/Footer";
+import FlexedTextImageHeroComp from "./component/common/hero_sections/FlexedTextImageHeroComp";
+import { Header } from "./component/Header";
+import FirstSection from "./component/ui_sections/home/FirstSection";
+import SecondSection from "./component/ui_sections/home/SecondSection";
+import ThirdSection from "./component/ui_sections/home/ThirdSection";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <FlexedTextImageHeroComp />
+              <FirstSection />
+              <SecondSection />
+              <ThirdSection />
+              <TextCenteredBanner />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+
+      {/* <UroSectionOne /> */}
     </div>
   );
 }

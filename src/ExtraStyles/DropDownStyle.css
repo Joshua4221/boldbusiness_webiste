@@ -1,0 +1,82 @@
+.productDropDown{
+    display: flex;
+    flex-direction: column;
+    background-color:#FFFFFF;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    right: 535px;
+}
+
+.productDropDown p{
+    color: #667085;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inter;
+    margin-bottom: 10px;
+}
+
+.productDropDown span{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 500;
+    color:#101828;
+    margin-bottom: 5px;
+}
+
+/* .productDropDown::before{
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+} */
+
+/* .productDropDown.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.2s ease;
+} */
+
+/* .productDropDown.inactive{
+  opacity: 0;
+  visibility: visible;
+  transform: translateY(-20px);
+  transition: 0.2s ease;
+} */
+
+.companyDropDown{
+  background-color: #FFFFFF;
+  padding: 15px;
+  padding-right: 50px;
+  position: absolute;
+  top: 60px;
+  right: 500px;
+}
+
+.companyDropDown span{
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 500;
+  color:#101828;
+  margin-bottom: 5px;
+}
+
+.companyDropDown::before{
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.companyDropDown.acive{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.2s ease;
+}
+
+.companyDropDown.inactive{
+  opacity: 0;
+  visibility: visible;
+  transform: translateY(-20px);
+  transition: 0.2s ease;
+}
