@@ -6,7 +6,7 @@ import { GetBoldButton } from "../../widgets/buttons/GetBoldButton";
 const TextCenteredBanner = () => {
   return (
     <div className="bg-[#F8FAFC] pt-[20px] ">
-      <div className="absolute inset-0 bg-black clip-custom"></div>
+      <div className=""></div>
 
       {/* inner layer */}
       <div className=" relative flex items-center justify-center overflow-hidden h-[80vh] bg-darkBackground ">
