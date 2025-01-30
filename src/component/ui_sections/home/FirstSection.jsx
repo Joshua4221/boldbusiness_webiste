@@ -8,7 +8,7 @@ import LightText from "../../widgets/text_elements/LightText";
 
 const FirstSection = () => {
   return (
-    <div className={"flex flex-col gap-[100px] py-[30px]"}>
+    <div className={"flex flex-col  py-[30px]"}>
       {DoubleChildContainerArray?.map((section, index) => (
         <DoubleChildContainer
           key={index}

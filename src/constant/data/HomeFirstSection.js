@@ -9,8 +9,9 @@ export const DoubleChildContainerArray = [
     description2: false,
     list: ["Request Payment", "Scan Device", "Enjoy Fast payment process"],
     hasList: true,
-    innerContainerClass: "lg:w-[80%] flex-wrap-reverse gap-[20px] lg:gap-0",
-    mainContainerClass: "",
+    innerContainerClass:
+      "flex-wrap-reverse justify-between gap-[20px] lg:gap-0",
+    mainContainerClass: "py-[100px]",
     hasBottomText: false,
     bottomText: "",
   },
@@ -27,8 +28,8 @@ export const DoubleChildContainerArray = [
     ],
     hasList: true,
     innerContainerClass:
-      "lg:w-[80%] flex-wrap-reverse lg:flex-row-reverse gap-[20px] lg:gap-0",
-    mainContainerClass: "bg-[#F8FAFC] py-[3rem]",
+      " flex-wrap-reverse lg:flex-row-reverse gap-[20px] lg:gap-0",
+    mainContainerClass: "bg-[#F8FAFC] py-[100px]",
     hasBottomText: false,
     bottomText: "",
   },
@@ -39,7 +40,7 @@ export const DoubleChildContainerArray = [
       "This approach ensures convenience for users, offering them a quick solution to their financial needs while maintaining transparency and security.",
     description2: "",
     hasList: false,
-    innerContainerClass: "lg:w-[80%] flex-wrap-reverse gap-[20px] lg:gap-0",
+    innerContainerClass: " flex-wrap-reverse gap-[20px] lg:gap-0",
     mainContainerClass: "",
     hasBottomText: true,
     bottomText:

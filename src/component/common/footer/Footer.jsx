@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <div className="bg-darkBackground py-[80px] ">
       {/* inner comp */}
-      <div className="w-[90%] flex flex-col gap-[100px] mx-auto ">
+      <div className="container lg:px-[6rem] px-[3rem] flex  flex-col gap-[100px] ">
         {/* first layer */}
-        <div className="flex justify-between">
+        <div className="flex flex-wrap lg:gap-0 gap-[50px] justify-between">
           {/* logo text container */}
           <div className="lg:w-[22%] flex flex-col gap-[20px] ">
             <div>
@@ -27,9 +27,9 @@ const Footer = () => {
             />
           </div>
           {/* footer items */}
-          <div className="lg:w-[70%] flex gap-[40px] text-[#fff]">
+          <div className="lg:w-[70%] w-full flex flex-wrap justify-end gap-[40px] text-[#fff]">
             {FooterLinks.map((linkLists, index) => (
-              <div className="w-[23%]" key={index}>
+              <div className="xmd:w-[21%] w-[40%] " key={index}>
                 <FooterLinkList
                   title={linkLists.title}
                   linkList={linkLists.linkList}

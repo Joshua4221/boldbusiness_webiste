@@ -39,6 +39,8 @@ import BoldMobileImage from "../assets/BoldMobileImage.svg";
 import DownloadBoldImgIcon from "../assets/DownloadBoldImgIcon.svg";
 import WhiteBoldLogo from "../assets/bold-new-logo-white-transparent-1.svg";
 import BottomBannerShape from "../assets/ButtomBannerShapes.svg";
+import LadySmiling from "../assets/lady-smiling.svg";
+import divider from "../assets/Divider.svg";
 
 export const IMAGES = {
   BoldLogo,
@@ -82,4 +84,6 @@ export const IMAGES = {
   DownloadBoldImgIcon,
   WhiteBoldLogo,
   BottomBannerShape,
+  LadySmiling,
+  divider,
 };
