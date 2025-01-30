@@ -2,6 +2,22 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    screens: {
+      mxs: "365px",
+      xs: "430px",
+      xm: "500px",
+      sxm: "570px",
+      sm: "640px",
+      xsm: "680px",
+      md: "768px",
+      smd: "820px",
+      xmd: "900px",
+      lg: "1024px",
+      "2lg": "1100px",
+      xlg: "1200px",
+      xl: "1280px",
+      "2xl": "1400px",
+    },
     container: {
       center: true,
       padding: "2rem 0rem",
