@@ -3,13 +3,9 @@ import React from "react";
 const TextTitleDescription = ({
   title = "Add Title",
   description = "Add Description",
-  description2 = "Add second desciption",
   textContainer,
   titleClass,
   textDescriptionClass,
-  textDescriptionClass2,
-  title2,
-  titleClass2,
 }) => {
   return (
     <div className={` text-primary flex flex-col gap-[20px]  ${textContainer}`}>

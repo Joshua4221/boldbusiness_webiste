@@ -14,19 +14,18 @@ const FirstSection = () => {
           key={index}
           mainContainerClass={section.mainContainerClass}
           innerContainerClass={section.innerContainerClass}
+          childOneContainer={section.childOneContainer}
+          childTwoContainer={section.childTwoContainer}
           childOne={
             <div className="w-[100%]">
-              <img src={section.imgSrc} className="w-[100%]  " />
+              <img src={section.imgSrc} className="w-[100%]" />
             </div>
           }
           childTwo={
             <div className="flex flex-col gap-[25px] ">
               <TextTitleDescription
-                titleClass={`lg:text-[38px] ${
-                  (section.LetterSpaceClass, section.titleWidth)
-                }`}
-                textDescriptionClass={"lg:text-[16px] text-[Aeonik]"}
-                textDescriptionClass2={"lg:text-[16px]"}
+                titleClass={`lg:text-[37px] lg:w-[80%]  ${section.titleClass}`}
+                textDescriptionClass={`lg:text-[15px] lg:w-[80%] text-[Aeonik] ${section.descriptionClass}`}
                 title={section.title}
                 description={section.description}
                 description2={section.description2}
@@ -36,7 +35,7 @@ const FirstSection = () => {
               {section.hasBottomText && (
                 <LightText
                   text={section.bottomText}
-                  classStyle={section.bottomTextClass}
+                  classStyle={`lg:w-[80%] ${section.bottomTextClass}`}
                 />
               )}
             </div>

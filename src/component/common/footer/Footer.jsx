@@ -23,7 +23,7 @@ const Footer = () => {
 
             <LightText
               text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-              classStyle={"text-white"}
+              classStyle={"text-[#DFDFDF] font-[300] text-[14px]"}
             />
           </div>
           {/* footer items */}

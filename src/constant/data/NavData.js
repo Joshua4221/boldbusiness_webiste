@@ -3,11 +3,12 @@ import { IMAGES } from "../Images";
 export const NavData = [
   {
     navLayer: [
-      { logo: true, logoType: "white" },
+      { logo: true, logoType: "white", link: "#" },
       {
         logo: false,
         textType: "normal_text",
         text: "Personal",
+        link: "#",
         onMobile: false,
       },
       { logo: false, textType: "bg_text", text: "Business", onMobile: false },
@@ -25,8 +26,16 @@ export const NavData = [
             titleType: true,
             title: "Virtual Banking",
             content: [
-              { icon: IMAGES.VirtualBankIcon, text: "Virtual Bank Accounts" },
-              { icon: IMAGES.VitualCardIcon, text: "Virtual Cards" },
+              {
+                icon: IMAGES.VirtualBankIcon,
+                text: "Virtual Bank Accounts",
+                link: "/virtual-banks-accounts",
+              },
+              {
+                icon: IMAGES.VitualCardIcon,
+                text: "Virtual Cards",
+                link: "/virtual-cards",
+              },
             ],
           },
           {

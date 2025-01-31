@@ -14,10 +14,10 @@ const DoubleChildContainer = ({
         <div
           className={` flex flex-wrap items-center justify-between mx-auto ${innerContainerClass} `}
         >
-          <div className={`child-one lg:w-[46%] ${childOneContainer}`}>
+          <div className={`child-one lg:w-[45%] ${childOneContainer}`}>
             {childOne}
           </div>
-          <div className={`child-two lg:w-[46%] ${childTwoContainer}`}>
+          <div className={`child-two lg:w-[45%] ${childTwoContainer}`}>
             {childTwo}
           </div>
         </div>

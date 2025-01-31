@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavDropDown = ({ dropdown_content }) => {
   return (
@@ -15,7 +16,8 @@ const NavDropDown = ({ dropdown_content }) => {
 
           <div className="flex flex-col">
             {item?.content?.map((data, int) => (
-              <div
+              <NavLink
+                to={data.link}
                 key={int}
                 className="flex items-center gap-3 px-[1.375rem] py-[0.625rem] cursor-pointer"
               >
@@ -27,7 +29,7 @@ const NavDropDown = ({ dropdown_content }) => {
                 <p className="text-base font-medium text-[#101828]">
                   {data?.text}
                 </p>
-              </div>
+              </NavLink>
             ))}
           </div>
         </div>
