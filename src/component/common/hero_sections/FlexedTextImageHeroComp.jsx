@@ -27,11 +27,12 @@ const FlexedTextImageHeroComp = () => {
         className="bg-custom-gradient w-full"
       >
         <div className="container h-full lg:px-[6rem] px-[3rem] xmd:pt-0 pt-[7rem] xmd:py-0 py-[3rem] xmd:relative flex xmd:flex-row flex-col justify-start items-center">
-          <div className="w-full">
+          <div className="w-full font-Inter">
             <div className="text-container flex flex-col gap-[20px] xmd:w-[45%] xsm:w-[65%] w-full">
               <TextTitleDescription
                 title="Accept In-Store Payment Across Africa"
                 description="With Bold Business App, You’ll be able to make Digital Payments From Your Shop through Mobile Money, Bank Transfer & Card Payments."
+                className=" leading-[1]"
               />
               <GetBoldButton
                 className="bg-black w-[40%]  lg:w-[30%] text-white px-4 py-2 rounded-md"

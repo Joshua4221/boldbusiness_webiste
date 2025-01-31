@@ -26,6 +26,7 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: { Inter: ["Inter", "sans-serif"] },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(0deg, rgba(213, 230, 253, 0.105) 0.76%, rgba(0, 111, 255, 0.03) 100%)",

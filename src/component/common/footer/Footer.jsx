@@ -44,26 +44,26 @@ const Footer = () => {
           {/* line across */}
           <div className=" h-[2px] w-[100%] bg-[#fff] "></div>
           {/* social links and texts */}
-          <div className="flex justify-between">
+          <div className="flex lg:justify-between justify-center gap-[10px] lg:gap-0 flex-wrap-reverse ">
             {/* copy right text */}
             <div>
               <LightText text="© Copyright 2021, All Rights Reserved" />
             </div>
             {/* social links */}
             <div className="flex gap-[20px]">
-              <div>
+              <div className="p-[5px] border-[1px] border-[#fff] rounded-[100%] ">
                 <FaXTwitter color="#fff" />
               </div>
-              <div className="bg-[blue] rounded-full w-6 h-6 flex justify-center items-center">
+              <div className="bg-[blue] rounded-full p-[6px] flex justify-center items-center">
                 <FaFacebookF color="#fff" />
               </div>
-              <div>
+              <div className="p-[5px] border-[1px] border-[#fff] rounded-[100%]">
                 <FaInstagram color="#fff" />
               </div>
-              <div>
+              <div className="p-[5px] border-[1px] border-[#fff] rounded-[100%]">
                 <RiTiktokLine color="#fff" />
               </div>
-              <div>
+              <div className="p-[5px] border-[1px] border-[#fff] rounded-[100%]">
                 <RiYoutubeLine color="#fff" />
               </div>
             </div>

@@ -13,7 +13,7 @@ const TextCenteredBanner = () => {
         <div className="w-full">
           <img src={IMAGES.divider} className="w-full" alt="" />
         </div>
-        <div className=" flex items-center lg:h-[50vh] h-[30vh] justify-center ">
+        <div className="flex items-center lg:h-[50vh] h-[40vh] px-3 justify-center ">
           {/* text container */}
           <div className="lg:w-[50%] flex flex-col items-center gap-[20px] mx-auto">
             <TextTitleDescription

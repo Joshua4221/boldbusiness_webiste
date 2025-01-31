@@ -40,8 +40,8 @@ const ThirdSection = () => {
                 />
               )}
               <TextTitleDescription
-                titleClass={`lg:text-[40px] ${thirdSection.titleClass}`}
-                titleClass2={"lg:text-[40px]"}
+                titleClass={`lg:text-[38px] ${thirdSection.titleClass}`}
+                titleClass2={"lg:text-[38px]"}
                 textDescriptionClass={`lg:text-[16px] text-[Aeonik] ${thirdSection.textDescriptionClass}`}
                 title={thirdSection.title1}
                 title2={thirdSection.title2}

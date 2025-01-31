@@ -48,7 +48,7 @@ const NewNavbar = () => {
 
   return (
     <div
-      className={`z-50 w-full fixed  lg:pt-6 py-2 ${
+      className={`z-50 w-full fixed font-Inter  lg:pt-6 py-2 ${
         scrolltopdata === "scrolled" ? "bg-white" : "bg-transparent"
       }`}
     >
