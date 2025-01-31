@@ -14,7 +14,11 @@ const FooterLinkList = ({
 
       <div className="flex flex-col  gap-[10px] ">
         {linkList.map((items, key) => (
-          <NavLink className={"text-[#DFDFDF]"} key={key} to={items.link}>
+          <NavLink
+            className={"text-[#DFDFDF] font-[100] "}
+            key={key}
+            to={items.link}
+          >
             {items.label}
           </NavLink>
         ))}

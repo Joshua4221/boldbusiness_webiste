@@ -43,7 +43,7 @@ const SecondSection = () => {
             </div>
             <div className="text-center mt-3  text-white">
               <p className="font-bold text-[24px]">Request Payment</p>
-              <p className="font-normal text-[16px] font-Aeonik">
+              <p className="font-light text-[14px] font-Inter text-[#FFFFFF] leading-[20px]">
                 Set payment amount and the <br />
                 customers scan to pay
               </p>
@@ -70,7 +70,7 @@ const SecondSection = () => {
 
             <div className="text-center  text-white">
               <p className="font-bold text-[24px]">Scan with Bold App to Pay</p>
-              <p className="font-normal text-[16px] font-Aeonik">
+              <p className="font-light text-[14px] font-Inter text-[#FFFFFF] leading-[20px]">
                 A bar code is generated for you to
                 <br /> pay for your expenses
               </p>
@@ -117,7 +117,7 @@ const SecondSection = () => {
                 Swift Transaction in
                 <br /> Seconds
               </p>
-              <p className="font-normal text-[16px] font-Aeonik">
+              <p className=" font-light text-[14px] font-Inter text-[#FFFFFF] leading-[20px]">
                 The fastest way to make
                 <br /> payment with ease
               </p>

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { NavData } from "../constant/data/NavData";
 import { GetBoldButton } from "./widgets/buttons/GetBoldButton";
 import LogoComponent from "./LogoComponent";
@@ -10,6 +10,8 @@ import { FaTimes } from "react-icons/fa";
 const NewNavbar = () => {
   const [navIndicator, setNavIndicator] = useState("");
   const [showMObileNav, setShowMobileNav] = useState(false);
+
+  const [scrolltopdata, setscrolltopdata] = useState("");
 
   const handleNavIndicator = (data) => {
     console.log("clicked");
@@ -28,19 +30,40 @@ const NewNavbar = () => {
     setShowMobileNav(!showMObileNav);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window?.scrollY < 25) {
+        setscrolltopdata("");
+      } else {
+        setscrolltopdata("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  console.log(scrolltopdata, "scrolltopdata");
+
   return (
-    <div className="w-full  lg:pt-6 py-2 bg-white  lg:bg-red-300 lg:bg-transparent">
+    <div
+      className={`z-50 w-full fixed font-Inter  lg:pt-6 py-2 ${
+        scrolltopdata === "scrolled" ? "bg-white" : "bg-transparent"
+      }`}
+    >
       {/* mobile nav placeholder with logo and menu bar */}
       <div
         className={
           showMObileNav
-            ? "container px-[6rem] hidden items-center justify-between lg:hidden"
-            : "container flex px-[2rem] py-[1rem] bg-custom-gradient  items-center justify-between lg:hidden"
+            ? "container px-[6rem] hidden items-center justify-between 2lg:hidden"
+            : "container flex lg:px-[6rem] lg:w-full w-[80%] py-[1rem] bg-custom-gradient  items-center justify-between 2lg:hidden"
         }
       >
         <div>
           <LogoComponent logo_indicator={"white"} />
         </div>
+
         <div>
           <button onClick={handleShowMobileNav}>
             <IoMenuSharp fontSize={36} />
@@ -50,25 +73,25 @@ const NewNavbar = () => {
       <div
         className={
           showMObileNav
-            ? "container lg:px-[6rem]"
-            : "container hidden lg:block lg:px-[6rem]"
+            ? "container 2lg:px-[6rem]"
+            : "container hidden 2lg:block 2lg:px-[6rem]"
         }
       >
-        <div className="flex justify-end px-[2rem] pt-[1rem] lg:px-0 lg:hidden">
+        <div className="flex justify-end px-[2rem] pt-[1rem] 2lg:px-0 2lg:hidden">
           <button onClick={handleShowMobileNav}>
             <FaTimes />
           </button>
         </div>
 
-        <div className="w-full  flex lg:flex-row flex-col lg:items-center lg:justify-between">
+        <div className="w-full  flex 2lg:flex-row flex-col 2lg:items-center 2lg:justify-between">
           {NavData?.map((item, key) => (
             <div key={key}>
               {!item?.button ? (
-                <div className="flex px-[2rem] lg:px-0  lg:flex-row flex-col lg:gap-6 gap-6 lg:items-center">
+                <div className="flex px-[2rem] lg:px-0  2lg:flex-row flex-col 2lg:gap-6 gap-6 2lg:items-center">
                   {item?.navLayer?.map((data, int) => (
                     <div key={int}>
                       {data?.logo ? (
-                        <div className="hidden lg:block">
+                        <div className="hidden 2lg:block">
                           {<LogoComponent logo_indicator={data?.logoType} />}
                         </div>
                       ) : (
@@ -76,8 +99,8 @@ const NewNavbar = () => {
                           <div
                             className={
                               data.onMobile === true
-                                ? "flex items-center justify-between lg:justify-start cursor-pointer"
-                                : "hidden lg:flex  items-center  cursor-pointer"
+                                ? "flex items-center justify-between 2lg:justify-start cursor-pointer"
+                                : "hidden 2lg:flex  items-center  cursor-pointer"
                             }
                             onClick={() => {
                               console.log("clicked item");
@@ -121,9 +144,9 @@ const NewNavbar = () => {
                   ))}
                 </div>
               ) : (
-                <div className="px-[2rem] border-t-[1.5px] border-[#F9FAFB] lg:px-0 mt-[2rem] py-[2rem] lg:py-0 lg:mt-0 ">
+                <div className="px-[2rem] border-t-[1.5px] border-[#F9FAFB] lg:px-0 mt-[2rem] py-[2rem] 2lg:py-0 2lg:mt-0 ">
                   <GetBoldButton
-                    className="bg-black w-[100%] lg:w-[] text-white px-4 py-2 rounded-md"
+                    className="bg-black w-[100%] 2lg:w-[] text-white px-4 py-2 rounded-md"
                     children={"Get started — It's free"}
                   />
                 </div>
