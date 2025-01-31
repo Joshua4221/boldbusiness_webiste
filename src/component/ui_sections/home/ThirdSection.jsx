@@ -15,6 +15,8 @@ const ThirdSection = () => {
           key={index}
           mainContainerClass={thirdSection.thirdSecMainContainerClass}
           innerContainerClass={thirdSection.thirdSecInnerContainerClass}
+          childOneContainer={thirdSection.childOneContainer}
+          childTwoContainer={thirdSection.childTwoContainer}
           childOne={
             <div className=" w-[100%]">
               <img
@@ -40,7 +42,7 @@ const ThirdSection = () => {
                 />
               )}
               <TextTitleDescription
-                titleClass={`lg:text-[38px] ${thirdSection.titleClass}`}
+                titleClass={`lg:text-[37px] lg:w-[80%] ${thirdSection.titleClass}`}
                 titleClass2={"lg:text-[38px]"}
                 textDescriptionClass={`lg:text-[16px] text-[Aeonik] ${thirdSection.textDescriptionClass}`}
                 title={thirdSection.title1}

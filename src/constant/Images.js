@@ -41,6 +41,9 @@ import WhiteBoldLogo from "../assets/bold-new-logo-white-transparent-1.svg";
 import BottomBannerShape from "../assets/ButtomBannerShapes.svg";
 import LadySmiling from "../assets/lady-smiling.svg";
 import divider from "../assets/Divider.svg";
+import requestPayment from "../assets/Request Payment.png";
+import scanToPay from "../assets/Scan to Pay.png";
+import successfulTransaction from "../assets/Successful Transaction.png";
 
 export const IMAGES = {
   BoldLogo,
@@ -86,4 +89,7 @@ export const IMAGES = {
   BottomBannerShape,
   LadySmiling,
   divider,
+  requestPayment,
+  scanToPay,
+  successfulTransaction,
 };

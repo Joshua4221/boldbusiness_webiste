@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { NavData } from "../constant/data/NavData";
-import { GetBoldButton } from "./widgets/buttons/GetBoldButton";
-import LogoComponent from "./LogoComponent";
+import { NavData } from "../../../constant/data/NavData";
+import { GetBoldButton } from "../../widgets/buttons/GetBoldButton";
+import LogoComponent from "../../LogoComponent";
 import { IoChevronDown, IoMenuSharp } from "react-icons/io5";
-import NavDropDown from "./NavDropDown";
-import OnClickedOutSide from "../hooks/OnClickedOutSide";
+import NavDropDown from "../../NavDropDown";
+import OnClickedOutSide from "../../../hooks/OnClickedOutSide";
 import { FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const NewNavbar = () => {
   const [navIndicator, setNavIndicator] = useState("");
@@ -60,9 +61,9 @@ const NewNavbar = () => {
             : "container flex lg:px-[6rem] lg:w-full w-[80%] py-[1rem] bg-custom-gradient  items-center justify-between 2lg:hidden"
         }
       >
-        <div>
+        <NavLink to={"/"}>
           <LogoComponent logo_indicator={"white"} />
-        </div>
+        </NavLink>
 
         <div>
           <button onClick={handleShowMobileNav}>
@@ -91,12 +92,13 @@ const NewNavbar = () => {
                   {item?.navLayer?.map((data, int) => (
                     <div key={int}>
                       {data?.logo ? (
-                        <div className="hidden 2lg:block">
+                        <NavLink to={"/"} className="hidden 2lg:block">
                           {<LogoComponent logo_indicator={data?.logoType} />}
-                        </div>
+                        </NavLink>
                       ) : (
                         <div className="relative ">
-                          <div
+                          <NavLink
+                            to={data.link}
                             className={
                               data.onMobile === true
                                 ? "flex items-center justify-between 2lg:justify-start cursor-pointer"
@@ -122,7 +124,7 @@ const NewNavbar = () => {
                                 <IoChevronDown className="font-semibold text-base text-[#101828]" />
                               </div>
                             )}
-                          </div>
+                          </NavLink>
 
                           {data?.textType === "drop_down_text" && (
                             <>

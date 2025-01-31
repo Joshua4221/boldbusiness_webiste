@@ -17,23 +17,25 @@ export const TripleChildContainer = ({
     <div
       className={`tripleChildContainer bg-[#0F172A] py-8 ${TripleChildContainerClass}`}
     >
-      <div
-        className={`tripleChildInnerContainer max-w-7xl mx-auto ${tripleChildInnerContainerClass}`}
-      >
-        <div className={`headlineContainer py-5 ${headlineContainerClass}`}>
-          {headlineChild}
-        </div>
+      <div className="container lg:px-[6rem] px-[3rem]">
         <div
-          className={`threeChildContainer flex flex-wrap  justify-evenly mx-auto ${threeChildContainerClass}`}
+          className={`tripleChildInnerContainer  mx-auto ${tripleChildInnerContainerClass}`}
         >
-          <div className={`firstChild ${firstChildContainer}`}>
-            {firstChild}
+          <div className={`headlineContainer py-5 ${headlineContainerClass}`}>
+            {headlineChild}
           </div>
-          <div className={`secondChild ${secondChildContainer}`}>
-            {secondChild}
-          </div>
-          <div className={`thirdChild ${thirdChildContainer}`}>
-            {thrirdChild}
+          <div
+            className={`threeChildContainer flex flex-wrap  lg:justify-between mx-auto ${threeChildContainerClass}`}
+          >
+            <div className={`firstChild lg:w-[30%] ${firstChildContainer}`}>
+              {firstChild}
+            </div>
+            <div className={`secondChild lg:w-[30%] ${secondChildContainer}`}>
+              {secondChild}
+            </div>
+            <div className={`thirdChild lg:w-[30%] ${thirdChildContainer}`}>
+              {thrirdChild}
+            </div>
           </div>
         </div>
       </div>
