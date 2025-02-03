@@ -47,11 +47,11 @@ export const ThirdHomeSectionDoubleChildContainerArray = [
     titles: [
       {
         title: "Automate the boring stuff",
-        class: "text-[#fff] lg:text-[75px] lg:w-[88%]",
+        class: "text-[#fff] 2lg:text-[75px] 2lg:w-[88%]",
       },
       {
         title: "Save 10 hours every week.",
-        class: "text-[#DFDFDF] lg:text-[65px] lg:w-[88%]",
+        class: "text-[#DFDFDF] 2lg:text-[65px] 2lg:w-[88%]",
       },
     ],
     descriptions: [{ description: "", class: "" }],

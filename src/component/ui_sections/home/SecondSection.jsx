@@ -23,7 +23,7 @@ const SecondSection = () => {
           </div>
         }
         secondChild={
-          <div className="lg:w-[90%] mx-auto">
+          <div className="2lg:w-[90%] mx-auto">
             <ImageTextCard
               image={IMAGES.scanToPay}
               title={"Scan with Bold App to Pay"}

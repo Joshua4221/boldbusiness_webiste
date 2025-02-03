@@ -25,7 +25,7 @@ const ImageTextCard = ({
 
         <TextTitleDescription
           textContainer={` items-center lg:w-[80%] justify-center gap-[12px] ${textContainer}`}
-          titleClass={` text-[#fff] font-[400] text-center lg:text-[20px] ${titleClass} `}
+          titleClass={` text-[#fff] font-[400] text-center 2lg:text-[20px] ${titleClass} `}
           textDescriptionClass={`text-[#FFFFFF] font-[300] text-center text-[15px] ${descriptionClass}`}
           title={title}
           description={description}

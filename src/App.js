@@ -8,6 +8,7 @@ import ThirdSection from "./component/ui_sections/home/ThirdSection";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import VirtualBankAccounts from "./pages/products/VirtualBankAccounts";
+import BusinessManagement from "./pages/products/BusinessManagement";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           path="/virtual-banks-accounts"
           element={<VirtualBankAccounts />}
         />
+        <Route path="/Business-Management" element={<BusinessManagement />} />
       </Routes>
 
       {/* <UroSectionOne /> */}

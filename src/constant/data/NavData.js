@@ -42,10 +42,11 @@ export const NavData = [
             titleType: true,
             title: "Your Business",
             content: [
-              { icon: IMAGES.LoanIcon, text: "Loan" },
+              { icon: IMAGES.LoanIcon, text: "Loan", link: "/loan" },
               {
                 icon: IMAGES.BusinessManagementIcon,
                 text: "Business Management",
+                link: "/Business-Management",
               },
             ],
           },
