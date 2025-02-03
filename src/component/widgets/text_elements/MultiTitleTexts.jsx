@@ -9,7 +9,7 @@ const MultiTitleTexts = ({
       {titles.map((title, key) => (
         <h1
           key={key}
-          className={`font-[700] leading-[1.2] text-[38px] lg:text-[55px]  ${title.class}`}
+          className={`font-[700] leading-[1.2] text-[38px] 2lg:text-[55px]  ${title.class}`}
         >
           {title.title}
         </h1>

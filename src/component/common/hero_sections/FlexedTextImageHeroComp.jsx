@@ -6,7 +6,17 @@ import { IMAGES } from "../../../constant/Images";
 import LightText from "../../widgets/text_elements/LightText";
 import { HeroStylesDiv } from "../../../ExtraStyles/HeroStyles";
 
-const FlexedTextImageHeroComp = () => {
+const FlexedTextImageHeroComp = ({
+  main,
+  inner,
+  box1,
+  box2,
+  heroTitle = "Accept In-Store Payment Across Africa",
+  heroDescription = "With Bold Business App, You’ll be able to make Digital Payments From Your Shop through Mobile Money, Bank Transfer & Card Payments.",
+  buttonText = "Get started",
+  mainContainer,
+  imgBox,
+}) => {
   const [windowHeight, setWindowHeight] = useState(0);
 
   useLayoutEffect(() => {
@@ -24,19 +34,23 @@ const FlexedTextImageHeroComp = () => {
     <>
       <HeroStylesDiv
         height={windowHeight}
-        className="bg-custom-gradient w-full"
+        className={`bg-custom-gradient w-full ${mainContainer}`}
       >
-        <div className="container h-full lg:px-[6rem] px-[3rem] xmd:pt-0 pt-[7rem] xmd:py-0 py-[3rem] xmd:relative flex xmd:flex-row flex-col justify-start items-center">
-          <div className="w-full font-Inter">
-            <div className="text-container flex flex-col gap-[20px] xmd:w-[45%] xsm:w-[65%] w-full">
+        <div
+          className={`container h-full lg:px-[6rem] px-[3rem] xmd:pt-0 pt-[7rem] xmd:py-0 py-[3rem] xmd:relative flex xmd:flex-row flex-col justify-start items-center ${main}`}
+        >
+          <div className={`w-full font-Inter ${inner}`}>
+            <div
+              className={`text-container flex flex-col gap-[20px] xmd:w-[45%] xsm:w-[65%] w-full ${box1}`}
+            >
               <TextTitleDescription
-                title="Accept In-Store Payment Across Africa"
-                description="With Bold Business App, You’ll be able to make Digital Payments From Your Shop through Mobile Money, Bank Transfer & Card Payments."
+                title={heroTitle}
+                description={heroDescription}
                 className=" leading-[1]"
               />
               <GetBoldButton
                 className="bg-black w-[40%]  lg:w-[30%] text-white px-4 py-2 rounded-md"
-                children={"Get started"}
+                children={buttonText}
               />
               <LightText text="No Card Required . Pay Anytime" />
             </div>
@@ -44,8 +58,12 @@ const FlexedTextImageHeroComp = () => {
             <div className="xmd:w-[55%] xsm:w-[35%] w-0"></div>
           </div>
 
-          <div className="image-container xmd:absolute relative xmd:top-[-1rem]  2lg:right-0 xmd:right-[-1.5rem] xl:w-[55%] xlg:w-[60%] 2lg:w-[65%] lg:w-[70%] xmd:w-[77%] w-full xmd:h-[unset] md:h-[28rem] sm:h-[26rem] sxm:h-[23rem] xs:h-[21rem] mxs:h-[17rem] h-[13rem]">
-            <div className="xmd:w-full smd:w-[90%] w-full xmd:absolute-[unset] absolute xmd:top-0 md:top-[-9rem] xsm:top-[-7rem] sm:top-[-4rem] sxm:top-[-2rem] xmd:right-0 sxm:right-[-1rem]">
+          <div
+            className={`image-container xmd:absolute relative xmd:top-[-1rem]  2lg:right-0 xmd:right-[-1.5rem] xl:w-[55%] xlg:w-[60%] 2lg:w-[65%] lg:w-[70%] xmd:w-[77%] w-full xmd:h-[unset] md:h-[28rem] sm:h-[26rem] sxm:h-[23rem] xs:h-[21rem] mxs:h-[17rem] h-[13rem] ${box2}`}
+          >
+            <div
+              className={`xmd:w-full smd:w-[90%] w-full xmd:absolute-[unset] absolute xmd:top-0 md:top-[-9rem] xsm:top-[-7rem] sm:top-[-4rem] sxm:top-[-2rem] xmd:right-0 sxm:right-[-1rem] ${imgBox}`}
+            >
               <img className="w-full h-[auto]" src={IMAGES.LaughWomanIMG} />
             </div>
           </div>

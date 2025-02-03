@@ -24,8 +24,8 @@ const FirstSection = () => {
           childTwo={
             <div className="flex flex-col gap-[25px] ">
               <TextTitleDescription
-                titleClass={`lg:text-[37px] lg:w-[80%]  ${section.titleClass}`}
-                textDescriptionClass={`lg:text-[15px] lg:w-[80%] text-[Aeonik] ${section.descriptionClass}`}
+                titleClass={`2lg:text-[37px] 2lg:w-[80%]  ${section.titleClass}`}
+                textDescriptionClass={`2lg:text-[15px] 2lg:w-[80%] text-[Aeonik] ${section.descriptionClass}`}
                 title={section.title}
                 description={section.description}
                 description2={section.description2}
