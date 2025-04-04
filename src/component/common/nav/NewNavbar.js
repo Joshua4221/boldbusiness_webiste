@@ -8,7 +8,7 @@ import OnClickedOutSide from "../../../hooks/OnClickedOutSide";
 import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const NewNavbar = () => {
+const NewNavbar = ({ navType }) => {
   const [navIndicator, setNavIndicator] = useState("");
   const [showMObileNav, setShowMobileNav] = useState(false);
 
@@ -50,7 +50,11 @@ const NewNavbar = () => {
   return (
     <div
       className={`z-50 w-full fixed font-Inter  lg:pt-6 py-2 ${
-        scrolltopdata === "scrolled" ? "bg-white" : "bg-transparent"
+        scrolltopdata === "scrolled"
+          ? "bg-white"
+          : showMObileNav === true
+          ? "bg-[#fff]"
+          : "bg-transparent"
       }`}
     >
       {/* mobile nav placeholder with logo and menu bar */}
@@ -58,16 +62,33 @@ const NewNavbar = () => {
         className={
           showMObileNav
             ? "container px-[6rem] hidden items-center justify-between 2lg:hidden"
-            : "container flex lg:px-[6rem] lg:w-full w-[80%] py-[1rem] bg-custom-gradient  items-center justify-between 2lg:hidden"
+            : "container flex lg:px-[6rem] lg:w-full w-[80%] py-[1rem]  items-center justify-between 2lg:hidden"
         }
       >
         <NavLink to={"/"}>
-          <LogoComponent logo_indicator={"white"} />
+          <LogoComponent
+            logo_indicator={
+              scrolltopdata === "scrolled"
+                ? "white"
+                : navType === "darkHero"
+                ? ""
+                : "white"
+            }
+          />
         </NavLink>
 
         <div>
           <button onClick={handleShowMobileNav}>
-            <IoMenuSharp fontSize={36} />
+            <IoMenuSharp
+              fontSize={36}
+              color={
+                scrolltopdata === "scrolled"
+                  ? ""
+                  : navType === "darkHero"
+                  ? "#ffff"
+                  : ""
+              }
+            />
           </button>
         </div>
       </div>
@@ -93,7 +114,19 @@ const NewNavbar = () => {
                     <div key={int}>
                       {data?.logo ? (
                         <NavLink to={"/"} className="hidden 2lg:block">
-                          {<LogoComponent logo_indicator={data?.logoType} />}
+                          {
+                            <>
+                              {scrolltopdata === "scrolled" ? (
+                                <LogoComponent logo_indicator={"white"} />
+                              ) : (
+                                <LogoComponent
+                                  logo_indicator={
+                                    navType === "darkHero" ? "" : "white"
+                                  }
+                                />
+                              )}
+                            </>
+                          }
                         </NavLink>
                       ) : (
                         <div className="relative ">
@@ -109,19 +142,51 @@ const NewNavbar = () => {
                               handleNavIndicator(data?.text);
                             }}
                           >
-                            <p
-                              className={
-                                data.text === "Business"
-                                  ? "font-semibold text-base bg-[#DCFFC7] px-[8px] rounded-[5px] text-[#101828]"
-                                  : "font-semibold text-base text-[#101828]"
-                              }
-                            >
-                              {data?.text}
-                            </p>
+                            {scrolltopdata === "scrolled" ? (
+                              <p
+                                className={
+                                  data.text === "Business"
+                                    ? "font-semibold text-base bg-[#DCFFC7] px-[8px] rounded-[5px] text-[#101828]"
+                                    : "font-semibold text-base text-[#101828]"
+                                }
+                              >
+                                {data?.text}
+                              </p>
+                            ) : navType === "darkHero" ? (
+                              <p
+                                className={
+                                  data.text === "Business"
+                                    ? "font-semibold text-base bg-[#DCFFC7] px-[8px] rounded-[5px] text-[#101828]"
+                                    : showMObileNav === true
+                                    ? "font-semibold text-base text-[#101828]"
+                                    : "font-semibold text-base text-[#fff]"
+                                }
+                              >
+                                {data?.text}
+                              </p>
+                            ) : (
+                              <p
+                                className={
+                                  data.text === "Business"
+                                    ? "font-semibold text-base bg-[#DCFFC7] px-[8px] rounded-[5px] text-[#101828]"
+                                    : "font-semibold text-base text-[#101828]"
+                                }
+                              >
+                                {data?.text}
+                              </p>
+                            )}
 
                             {data?.textType === "drop_down_text" && (
                               <div className="ml-1 flex items-center justify-center mt-1">
-                                <IoChevronDown className="font-semibold text-base text-[#101828]" />
+                                <IoChevronDown
+                                  className={
+                                    scrolltopdata === "scrolled"
+                                      ? "font-semibold text-base text-[#101828]"
+                                      : navType === "darkHero"
+                                      ? "font-semibold text-base text-[#fff]"
+                                      : "font-semibold text-base text-[#101828]"
+                                  }
+                                />
                               </div>
                             )}
                           </NavLink>
@@ -146,11 +211,23 @@ const NewNavbar = () => {
                   ))}
                 </div>
               ) : (
-                <div className="px-[2rem] border-t-[1.5px] border-[#F9FAFB] lg:px-0 mt-[2rem] py-[2rem] 2lg:py-0 2lg:mt-0 ">
-                  <GetBoldButton
-                    className="bg-black w-[100%] 2lg:w-[] text-white px-4 py-2 rounded-md"
-                    children={"Get started — It's free"}
-                  />
+                <div className="px-[2rem]  lg:px-0 mt-[2rem] py-[2rem] 2lg:py-0 2lg:mt-0 ">
+                  {scrolltopdata === "scrolled" ? (
+                    <GetBoldButton
+                      className="bg-black w-[100%] 2lg:w-[] text-white px-4 py-2 rounded-md"
+                      children={"Get started — It's free"}
+                    />
+                  ) : navType === "darkHero" ? (
+                    <GetBoldButton
+                      className="bg-white w-[100%] 2lg:w-[] text-black px-4 py-2 rounded-md"
+                      children={"Get started — It's free"}
+                    />
+                  ) : (
+                    <GetBoldButton
+                      className="bg-black w-[100%] 2lg:w-[] text-white px-4 py-2 rounded-md"
+                      children={"Get started — It's free"}
+                    />
+                  )}
                 </div>
               )}
             </div>

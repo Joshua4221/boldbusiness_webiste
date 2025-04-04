@@ -7,26 +7,24 @@ const ImageTextCard = ({
   innerContainer,
   imageContainer,
   image = IMAGES.requestPayment,
-  textContainer,
+  textContainer2,
   title,
   description,
   imageClass,
-  titleClass,
-  descriptionClass,
+  titleClassStyle = "text-[#fff] font-[400] text-center 2lg:text-[20px]",
+  descriptionClass = "text-[#FFFFFF] font-[300] text-center text-[15px]",
 }) => {
   return (
     <div className={`${mainContainer}`}>
-      <div
-        className={` flex flex-col gap-[40px] items-center  ${innerContainer}`}
-      >
+      <div className={` flex flex-col gap-[40px]   ${innerContainer}`}>
         <div className={`  ${imageContainer}`}>
           <img src={image} className={`${imageClass}`} />
         </div>
 
         <TextTitleDescription
-          textContainer={` items-center lg:w-[80%] justify-center gap-[12px] ${textContainer}`}
-          titleClass={` text-[#fff] font-[400] text-center 2lg:text-[20px] ${titleClass} `}
-          textDescriptionClass={`text-[#FFFFFF] font-[300] text-center text-[15px] ${descriptionClass}`}
+          textContainer={` lg:w-[80%]  gap-[10px] ${textContainer2}`}
+          titleClass={titleClassStyle}
+          textDescriptionClass={descriptionClass}
           title={title}
           description={description}
         />

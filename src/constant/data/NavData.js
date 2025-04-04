@@ -54,10 +54,15 @@ export const NavData = [
             titleType: true,
             title: "Managements and Reports",
             content: [
-              { icon: IMAGES.TerminalIcon, text: "POS Terminal" },
+              {
+                icon: IMAGES.TerminalIcon,
+                text: "POS Terminal",
+                link: "/POS-Terminal",
+              },
               {
                 icon: IMAGES.ScanPayIcon,
                 text: "Scan and Pay",
+                link: "/Scan-and-Pay",
               },
             ],
           },
@@ -72,22 +77,36 @@ export const NavData = [
           {
             titleType: false,
             content: [
-              { icon: IMAGES.AboutUsIcon, text: "About Us" },
+              { icon: IMAGES.AboutUsIcon, text: "About Us", link: "/About-Us" },
               {
                 icon: IMAGES.CareerIcon,
                 text: "Career",
+                link: "/Career",
               },
               {
                 icon: IMAGES.PressIcon,
                 text: "Press",
+                link: "/Press",
               },
             ],
           },
         ],
         onMobile: true,
       },
-      { logo: false, textType: "normal_text", text: "Contact", onMobile: true },
-      { logo: false, textType: "normal_text", text: "Blog", onMobile: true },
+      {
+        logo: false,
+        textType: "normal_text",
+        text: "Contact",
+        onMobile: true,
+        link: "/Contact",
+      },
+      {
+        logo: false,
+        textType: "normal_text",
+        text: "Blog",
+        onMobile: true,
+        link: "/Blog",
+      },
     ],
     button: false,
   },

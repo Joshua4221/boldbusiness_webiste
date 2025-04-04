@@ -2,10 +2,10 @@ import React from "react";
 import NewNavbar from "../nav/NewNavbar";
 import Footer from "../footer/Footer";
 
-const PageWrapper = ({ children }) => {
+const PageWrapper = ({ children, navType }) => {
   return (
     <>
-      <NewNavbar />
+      <NewNavbar navType={navType} />
       <>{children}</>
       <Footer />
     </>

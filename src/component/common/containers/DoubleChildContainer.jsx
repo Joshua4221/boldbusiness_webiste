@@ -9,10 +9,12 @@ const DoubleChildContainer = ({
   mainContainerClass,
 }) => {
   return (
-    <div className={` ${mainContainerClass}`}>
+    <div
+      className={` 2lg:py-[100px] lg:py-[80px] py-[60px] ${mainContainerClass}`}
+    >
       <div className="container lg:px-[6rem] px-[3rem] ">
         <div
-          className={` flex flex-wrap items-center justify-between mx-auto ${innerContainerClass} `}
+          className={` flex flex-wrap items-center justify-between mx-auto gap-4 ${innerContainerClass} `}
         >
           <div className={`child-one lg:w-[45%] ${childOneContainer}`}>
             {childOne}

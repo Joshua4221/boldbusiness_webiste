@@ -8,7 +8,7 @@ import LightText from "../../widgets/text_elements/LightText";
 
 const FirstSection = () => {
   return (
-    <div className={"flex flex-col  py-[20px]"}>
+    <div className={"flex flex-col "}>
       {DoubleChildContainerArray?.map((section, index) => (
         <DoubleChildContainer
           key={index}
@@ -22,7 +22,7 @@ const FirstSection = () => {
             </div>
           }
           childTwo={
-            <div className="flex flex-col gap-[25px] ">
+            <div className="flex flex-col gap-[25px]">
               <TextTitleDescription
                 titleClass={`2lg:text-[37px] 2lg:w-[80%]  ${section.titleClass}`}
                 textDescriptionClass={`2lg:text-[15px] 2lg:w-[80%] text-[Aeonik] ${section.descriptionClass}`}

@@ -16,6 +16,10 @@ const FlexedTextImageHeroComp = ({
   buttonText = "Get started",
   mainContainer,
   imgBox,
+  image = IMAGES.LaughWomanIMG,
+  imgstyle,
+  lightText = "No Card Required . Pay Anytime",
+  heroTitleClass = "",
 }) => {
   const [windowHeight, setWindowHeight] = useState(0);
 
@@ -47,12 +51,13 @@ const FlexedTextImageHeroComp = ({
                 title={heroTitle}
                 description={heroDescription}
                 className=" leading-[1]"
+                titleClass={heroTitleClass}
               />
               <GetBoldButton
-                className="bg-black w-[40%]  lg:w-[30%] text-white px-4 py-2 rounded-md"
+                className="bg-black w-[50%]  lg:w-[30%] md:w-[35%] text-white px-4 py-2 rounded-md"
                 children={buttonText}
               />
-              <LightText text="No Card Required . Pay Anytime" />
+              <LightText text={lightText} />
             </div>
 
             <div className="xmd:w-[55%] xsm:w-[35%] w-0"></div>
@@ -64,7 +69,7 @@ const FlexedTextImageHeroComp = ({
             <div
               className={`xmd:w-full smd:w-[90%] w-full xmd:absolute-[unset] absolute xmd:top-0 md:top-[-9rem] xsm:top-[-7rem] sm:top-[-4rem] sxm:top-[-2rem] xmd:right-0 sxm:right-[-1rem] ${imgBox}`}
             >
-              <img className="w-full h-[auto]" src={IMAGES.LaughWomanIMG} />
+              <img className={`w-full h-[auto] ${imgstyle}`} src={image} />
             </div>
           </div>
         </div>

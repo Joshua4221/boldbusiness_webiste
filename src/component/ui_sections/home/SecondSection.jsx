@@ -1,7 +1,7 @@
 import React from "react";
 import { IMAGES } from "../../../constant/Images";
 import { TripleChildContainer } from "../../common/containers/TripleChildContainer";
-import TextTitleDescription from "../../widgets/text_elements/TextTitleDescription";
+// import TextTitleDescription from "../../widgets/text_elements/TextTitleDescription";
 import ImageTextCard from "../../widgets/cards/ImageTextCard";
 
 const SecondSection = () => {

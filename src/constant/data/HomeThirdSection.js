@@ -37,7 +37,7 @@ export const ThirdHomeSectionDoubleChildContainerArray = [
     description2: false,
     button: "",
     thirdSecInnerContainerClass:
-      "lg:w-[100%] flex-row-reverse  flex-wrap-reverse py-[4rem]",
+      "lg:w-[100%] flex-row-reverse  flex-wrap-reverse",
     thirdSecMainContainerClass: " bg-[#0B0B0B]",
     titleClass: "hidden",
     titleClass2: "text-[yellow]",
@@ -47,11 +47,11 @@ export const ThirdHomeSectionDoubleChildContainerArray = [
     titles: [
       {
         title: "Automate the boring stuff",
-        class: "text-[#fff] 2lg:text-[75px] 2lg:w-[88%]",
+        class: "text-[#fff] 2lg:text-[45px] 2lg:w-[65%]",
       },
       {
         title: "Save 10 hours every week.",
-        class: "text-[#DFDFDF] 2lg:text-[65px] 2lg:w-[88%]",
+        class: "text-[#DFDFDF] 2lg:text-[45px] 2lg:w-[88%]",
       },
     ],
     descriptions: [{ description: "", class: "" }],
@@ -71,7 +71,7 @@ export const ThirdHomeSectionDoubleChildContainerArray = [
     description2: false,
     button: false,
     thirdSecInnerContainerClass:
-      "lg:w-[100%] flex-row-reverse gap-[20] lg:gap-0 flex-wrap-reverse py-[4rem]",
+      "lg:w-[100%] flex-row-reverse gap-[20] lg:gap-0 flex-wrap-reverse",
     textDescriptionClass: "",
     thirdSecMainContainerClass: "",
     titleClass: "",
@@ -97,7 +97,7 @@ export const ThirdHomeSectionDoubleChildContainerArray = [
     description2: false,
     button: false,
     thirdSecInnerContainerClass: "lg:w-[100%] flex-row-reverse ",
-    thirdSecMainContainerClass: "bg-[#F8FAFC] py-12",
+    thirdSecMainContainerClass: "bg-[#F8FAFC]",
     textDescriptionClass: "",
     titleClass: "",
     titleClass2: "",

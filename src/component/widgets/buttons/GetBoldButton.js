@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const GetBoldButton = ({ onClick, children, className }) => {
   return (
-    <button className={className} onClick={onClick}>
-      {children}
-    </button>
+    <Link to="/DownloadPage">
+      <button className={`  ${className}`} onClick={onClick}>
+        {children}
+      </button>
+    </Link>
   );
 };

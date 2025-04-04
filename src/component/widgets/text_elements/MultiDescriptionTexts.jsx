@@ -7,7 +7,7 @@ const MultiDescriptionTexts = ({
   return (
     <div className={` text-primary flex flex-col gap-[20px]  ${textContainer}`}>
       {descriptions.map((description, key) => (
-        <p key={key} className={`font-[400] text-[16px] ${description.class}`}>
+        <p key={key} className={`font-[400] text-[12px] ${description.class}`}>
           {description.description}
         </p>
       ))}

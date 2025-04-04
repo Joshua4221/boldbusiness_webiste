@@ -11,7 +11,7 @@ export const DoubleChildContainerArray = [
     hasList: true,
     innerContainerClass:
       "flex-wrap-reverse justify-between gap-[20px] lg:gap-0",
-    mainContainerClass: "py-[100px]",
+    mainContainerClass: "",
     hasBottomText: false,
     bottomText: "",
     LetterSpaceClass: "tracking-tighter",
