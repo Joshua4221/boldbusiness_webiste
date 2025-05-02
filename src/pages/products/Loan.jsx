@@ -45,7 +45,7 @@ const Loan = () => {
         <FAQSection />
         <TextCenteredBanner />
       </PageWrapper>
-    </>
+    </> 
   );
 };
 

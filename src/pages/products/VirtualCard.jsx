@@ -5,11 +5,13 @@ import VirtualCardDoubleSections from "../../component/ui_sections/virtualCard/V
 import VirtualCardBannerSection from "../../component/ui_sections/virtualCard/VirtualCardBannerSection";
 import FAQSection from "../../component/ui_sections/loan/FAQSection";
 import TextCenteredBanner from "../../component/common/bottom_banners/TextCenteredBanner";
+import { VirtualCardsPage } from "../../component/common/hero_sections/VirtualCardHeroSection";
 
 const VirtualCard = () => {
   return (
     <div>
-      <PageWrapper>
+      <PageWrapper navType={"darkHero"}>
+        <VirtualCardsPage />
         <VirtualCardFirstSection />
         <VirtualCardDoubleSections />
         <VirtualCardBannerSection />

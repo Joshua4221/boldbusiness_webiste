@@ -46,7 +46,7 @@ const SearchSection = () => {
         </div>
 
         {/* Search Button */}
-        <div className="w-full md:w-auto flex items-end">
+        <div className="w-full md:w-auto flex items-end pt-5">
           <button className="bg-black text-white px-6 py-2 rounded-md w-full md:w-auto hover:bg-gray-800 transition">
             Search
           </button>

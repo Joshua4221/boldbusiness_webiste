@@ -8,6 +8,9 @@ const FastTxFeauture = () => {
   return (
     <div>
       <TripleChildContainer
+        threeChildContainerClass={
+          "flex flex-wrap  lg:justify-between gap-[20px]"
+        }
         TripleChildContainerClass={"bg-[#fff] py-[100px]"}
         headlineContainerClass={"lg:mx-auto lg:text-center lg:w-[80%]"}
         headlineChild={
@@ -15,12 +18,14 @@ const FastTxFeauture = () => {
             <TextTitleDescription
               title="These features make your Transaction work faster"
               description=""
-              titleClass={""}
+              titleClass={"text-center w-[70%] lg:w-[85%] mx-auto"}
             />
             <div className="lg:w-[70%] lg:mx-auto">
               <LightText
                 text="Make your visitors happy and reduce website loading time. Take full advantage of speed and power."
-                classStyle={"text-[24px] text-[#12141D]"}
+                classStyle={
+                  "text-[16px] w-[70%] text-[#12141D] mx-auto font-normal text-center"
+                }
               />
             </div>
           </>

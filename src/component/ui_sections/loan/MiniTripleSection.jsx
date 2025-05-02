@@ -2,7 +2,9 @@ import React from "react";
 import { IMAGES } from "../../../constant/Images";
 import LightText from "../../widgets/text_elements/LightText";
 
-const MiniTripleSection = ({ mainContainerClass = "bg-[#F8FAFC] p-8" }) => {
+const MiniTripleSection = ({
+  mainContainerClass = "bg-[#F8FAFC] p-8 hidden md:block",
+}) => {
   const TextIcon = [
     {
       icon: IMAGES.BuildIconMini,
@@ -20,7 +22,7 @@ const MiniTripleSection = ({ mainContainerClass = "bg-[#F8FAFC] p-8" }) => {
 
   return (
     <div className={mainContainerClass}>
-      <div className="container mx-auto flex flex-col gap-3 md:flex-row justify-between items-center px-6 md:px-12">
+      <div className="container mx-auto flex flex-col gap-3 md:flex-row justify-between items-center px-6 md:px-12 ">
         {TextIcon.map((testIconChild, index) => (
           <div key={index} className="flex gap-2">
             <img src={testIconChild.icon} />

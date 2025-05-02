@@ -19,7 +19,7 @@ export const TripleChildContainer = ({
       className={`tripleChildContainer bg-[#0F172A] 2lg:py-[100px] lg:py-[80px] py-[20px] ${TripleChildContainerClass}`}
     >
       <div
-        className={`container lg:px-[6rem] px-[1rem] ${TripleFirstInneClass}`}
+        className={`container lg:px-[6rem]  px-[3rem] ${TripleFirstInneClass}`}
       >
         <div
           className={`tripleChildInnerContainer  mx-auto ${tripleChildInnerContainerClass}`}

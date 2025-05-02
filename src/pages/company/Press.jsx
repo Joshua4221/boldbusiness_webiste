@@ -32,10 +32,12 @@ const Press = () => {
                       description="Year 2024"
                       textDescriptionClass={"font-semibold font-Inter"}
                     />
+
+                    
                     <LightText text="Key highlights and updates on public safety, fraud prevention, and police initiatives throughout the year." />
                   </div>
 
-                  <div className=" flex gap-2 border-[#E5E7EF] border-[1px]">
+                  {/* <div className=" flex gap-2 border-[#E5E7EF] border-[1px]">
                     <div className=" 2lg:h-[10px] border-[1px]">
                       <p className="text-[14px] text-[#2A2E34] font-medium font-Inter">
                         Year 2024
@@ -48,7 +50,7 @@ const Press = () => {
                         className="w-[10px]"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             }

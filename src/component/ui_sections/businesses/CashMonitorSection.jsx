@@ -30,7 +30,7 @@ const CashMonitorSection = () => {
           </div>
         }
         childTwo={
-          <div>
+          <div className="">
             <img src={IMAGES.SpendMonitorCard} />
           </div>
         }

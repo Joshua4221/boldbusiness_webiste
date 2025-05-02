@@ -34,7 +34,7 @@ const FAQSection = ({}) => {
         <div className="mb-[10px]">
           <TextTitleDescription
             title="Frequently asked Questions"
-            titleClass={"text-[#1E242C] font-sans text-center"}
+            titleClass={"text-[#1E242C] font-sans text-center text-[45px]"}
             description=""
           />
           {/* <p className=" text-[46px] font-medium text-[#1E242C] font-sans"> </p> */}

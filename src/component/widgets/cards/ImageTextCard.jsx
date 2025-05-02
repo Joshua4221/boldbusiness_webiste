@@ -7,7 +7,7 @@ const ImageTextCard = ({
   innerContainer,
   imageContainer,
   image = IMAGES.requestPayment,
-  textContainer2,
+  textContainer,
   title,
   description,
   imageClass,
@@ -22,7 +22,7 @@ const ImageTextCard = ({
         </div>
 
         <TextTitleDescription
-          textContainer={` lg:w-[80%]  gap-[10px] ${textContainer2}`}
+          textContainer={` lg:w-[80%]   gap-[10px] ${textContainer}`}
           titleClass={titleClassStyle}
           textDescriptionClass={descriptionClass}
           title={title}

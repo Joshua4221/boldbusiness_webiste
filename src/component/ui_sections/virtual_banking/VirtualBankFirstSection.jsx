@@ -40,7 +40,7 @@ export const VirtualBankFirstSection = () => {
               imageContainer={"w-[10%]"}
               image={IMAGES.streamlinePayIcon}
               innerContainer={"flex flex-col items-start gap-[30px]"}
-              textContainer="items-start lg:w-[80%] justify-center gap-[10px]"
+              textContainer="flex items-start lg:w-[80%] justify-center gap-[10px]"
               titleClassStyle={
                 " text-[#12141D]  text-left font-[400] text-[25px]  2lg:text-[20px] "
               }
@@ -60,7 +60,7 @@ export const VirtualBankFirstSection = () => {
               innerContainer={
                 "flex flex-col justify-start items-start gap-[30px]"
               }
-              textContainer2=" lg:w-[80%] justify-center gap-[10px]"
+              textContainer=" lg:w-[80%] justify-center gap-[10px]"
               titleClassStyle={
                 " text-[#12141D]  text-left font-[400] text-[25px]  2lg:text-[20px]"
               }

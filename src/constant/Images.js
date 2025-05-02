@@ -158,10 +158,34 @@ import VBankThirdSecFirstCard from "../assets/VBankThirdSecFirstCard.png";
 import VBankThirdSecSecondCard from "../assets/VBankThirdSecSecondCard.png";
 import VBankThirdSecThirdCard from "../assets/VBankThirdSecThirdCard.png";
 import BlackArrowRightIcon from "../assets/BlackArrowRightIcon.svg";
+import UXDesignerIMG from "../assets/UXDesignerIMG.png";
+import FullStackDevIMG from "../assets/FullStackDevIMG.png";
+import DataScientetistIMG from "../assets/DataScientetistIMG.png";
+import ProjectManagerIMG from "../assets/ProjectManagerIMG.png";
+import MLEngineerIMG from "../assets/MLEngineerIMG.png";
+import IOSDeveloperIMG from "../assets/IOSDeveloperIMG.png";
+import VirtualCardHand from "../assets/VirtualCardHandPhone.svg";
+import FloatVirtcard from "../assets/FloatVirtcard.png";
+import floatVirtualCurrency from "../assets/floatVirtualCurrency.png";
+import FloatPreferenceCard from "../assets/FloatPreferenceCard.png";
+import floatVirtualCardIssued from "../assets/floatVirtualCardIssued.png";
+import virtualcardHandMain from "../assets/virtualcardHandMain.png";
 
 export const IMAGES = {
+  IOSDeveloperIMG,
+  MLEngineerIMG,
+  UXDesignerIMG,
+  FullStackDevIMG,
+  DataScientetistIMG,
+  ProjectManagerIMG,
   BoldLogo,
   DropdownIcon,
+  VirtualCardHand,
+  virtualcardHandMain,
+  floatVirtualCardIssued,
+  FloatPreferenceCard,
+  floatVirtualCurrency,
+  FloatVirtcard,
   VirtualBankIcon,
   virtualBankingImg,
   VitualCardIcon,

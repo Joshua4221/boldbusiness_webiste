@@ -4,12 +4,14 @@ import IncredibleClientSection from "../../component/ui_sections/about/Incredibl
 import AboutFirstSection from "../../component/ui_sections/about/AboutFirstSection";
 import ItemCenteredBanner2Two from "../../component/common/bottom_banners/ItemCenteredBanner2Two";
 import { AboutLastSection } from "../../component/ui_sections/about/AboutLastSection";
+import AboutHeroSection from "../../component/ui_sections/about/AboutHeroSection";
 
 const AboutUs = () => {
   return (
     <div>
       <>
         <PageWrapper>
+          <AboutHeroSection />
           <AboutFirstSection />
           <IncredibleClientSection />
           <AboutLastSection />

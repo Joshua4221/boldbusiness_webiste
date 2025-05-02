@@ -61,6 +61,7 @@ const BusinessManagement = () => {
             firstChild={
               <div className="lg:w-[90%] mx-auto">
                 <ImageTextCard
+                  textContainer={"mx-auto"}
                   innerContainer={"flex flex-col gap-[10px]"}
                   image={IMAGES.firstTxInterfaceImg}
                   title={"Transaction History"}
@@ -70,17 +71,22 @@ const BusinessManagement = () => {
                   titleClassStyle={
                     "text-[#12141D] font-[400] text-center 2lg:text-[20px]"
                   }
-                  descriptionClass={"text-[#12141D] text-center"}
+                  descriptionClass={
+                    "text-[#12141D] text-center mx-auto w-[70%]"
+                  }
                 />
               </div>
             }
             secondChild={
               <div className="lg:w-[90%] mx-auto">
                 <ImageTextCard
+                  textContainer={"mx-auto"}
                   titleClassStyle={
                     "text-[#12141D] font-[400] text-center 2lg:text-[20px]"
                   }
-                  descriptionClass={"text-[#12141D] text-center"}
+                  descriptionClass={
+                    "text-[#12141D] text-center mx-auto w-[70%]"
+                  }
                   image={IMAGES.SecondtransactioninterfaceImg}
                   title={"Get Feedbacks"}
                   description={
@@ -92,13 +98,16 @@ const BusinessManagement = () => {
             thrirdChild={
               <div className="lg:w-[90%] mx-auto">
                 <ImageTextCard
+                  textContainer={"mx-auto"}
                   image={IMAGES.thirdTxInterfaceImg}
-                  title={"Swift Transaction in Seconds"}
+                  title={"See Result"}
                   description={"The results show how much work has been done"}
                   titleClassStyle={
                     "text-[#12141D] font-[400] text-center 2lg:text-[20px]"
                   }
-                  descriptionClass={"text-[#12141D] text-center"}
+                  descriptionClass={
+                    "text-[#12141D] text-center mx-auto w-[70%]"
+                  }
                 />
               </div>
             }

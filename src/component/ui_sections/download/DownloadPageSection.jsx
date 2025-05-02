@@ -40,7 +40,7 @@ const DownloadPageSection = () => {
           childOne={
             <div>
               {section.isButton ? (
-                <button className="bg-[#006EFE] text-[#FFFFFF] rounded-[10px] px-4 py-2 font-semibold">
+                <button className="bg-[#006EFE] text-[#FFFFFF] rounded-[10px] px-4 py-2 font-semibold hidden md:block">
                   {section.BlueButtonText}
                 </button>
               ) : (
